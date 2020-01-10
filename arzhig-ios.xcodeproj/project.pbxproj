@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005DE2FA23C8A66B001D9ED8 /* arzhig-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arzhig-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		005DE2FA23C8A66B001D9ED8 /* Arzhig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arzhig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005DE30123C8A66B001D9ED8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		005DE30323C8A66B001D9ED8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		005DE2FB23C8A66B001D9ED8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				005DE2FA23C8A66B001D9ED8 /* arzhig-ios.app */,
+				005DE2FA23C8A66B001D9ED8 /* Arzhig.app */,
 				005DE31223C8A66D001D9ED8 /* arzhig-iosTests.xctest */,
 				005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */,
 			);
@@ -145,7 +145,7 @@
 			);
 			name = "arzhig-ios";
 			productName = "arzhig-ios";
-			productReference = 005DE2FA23C8A66B001D9ED8 /* arzhig-ios.app */;
+			productReference = 005DE2FA23C8A66B001D9ED8 /* Arzhig.app */;
 			productType = "com.apple.product-type.application";
 		};
 		005DE31123C8A66D001D9ED8 /* arzhig-iosTests */ = {
@@ -443,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Arzhig;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Arzhig;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
