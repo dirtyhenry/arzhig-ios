@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0029168323CA292300FED5B8 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029168223CA292300FED5B8 /* videos.json */; };
+		0029168523CA293800FED5B8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029168423CA293800FED5B8 /* Video.swift */; };
 		005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */; };
 		005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30123C8A66B001D9ED8 /* MasterViewController.swift */; };
 		005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30323C8A66B001D9ED8 /* DetailViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0029168223CA292300FED5B8 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = SOURCE_ROOT; };
+		0029168423CA293800FED5B8 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		005DE2FA23C8A66B001D9ED8 /* Arzhig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arzhig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005DE30123C8A66B001D9ED8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		005DE2FC23C8A66B001D9ED8 /* arzhig-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0029168223CA292300FED5B8 /* videos.json */,
 				005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */,
 				005DE30123C8A66B001D9ED8 /* MasterViewController.swift */,
 				005DE30323C8A66B001D9ED8 /* DetailViewController.swift */,
@@ -106,6 +111,7 @@
 				005DE30823C8A66D001D9ED8 /* Assets.xcassets */,
 				005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */,
 				005DE30D23C8A66D001D9ED8 /* Info.plist */,
+				0029168423CA293800FED5B8 /* Video.swift */,
 			);
 			path = "arzhig-ios";
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */,
+				0029168323CA292300FED5B8 /* videos.json in Resources */,
 				005DE30923C8A66D001D9ED8 /* Assets.xcassets in Resources */,
 				005DE30723C8A66B001D9ED8 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */,
+				0029168523CA293800FED5B8 /* Video.swift in Sources */,
 				005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */,
 				005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */,
 			);
