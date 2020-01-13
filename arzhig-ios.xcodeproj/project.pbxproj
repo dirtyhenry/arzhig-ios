@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		0029168323CA292300FED5B8 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029168223CA292300FED5B8 /* videos.json */; };
 		0029168523CA293800FED5B8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029168423CA293800FED5B8 /* Video.swift */; };
+		0029DB5023CCA07900DB6DBE /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB4F23CCA07900DB6DBE /* Decodable+Extension.swift */; };
+		0029DB5223CCA0F300DB6DBE /* videos-for-tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */; };
+		0029DB5423CCA11700DB6DBE /* Decodable+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */; };
+		0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */; };
 		005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */; };
 		005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30123C8A66B001D9ED8 /* MasterViewController.swift */; };
 		005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30323C8A66B001D9ED8 /* DetailViewController.swift */; };
 		005DE30723C8A66B001D9ED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30523C8A66B001D9ED8 /* Main.storyboard */; };
 		005DE30923C8A66D001D9ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30823C8A66D001D9ED8 /* Assets.xcassets */; };
 		005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */; };
-		005DE31723C8A66D001D9ED8 /* arzhig_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE31623C8A66D001D9ED8 /* arzhig_iosTests.swift */; };
 		005DE32223C8A66D001D9ED8 /* arzhig_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,10 @@
 /* Begin PBXFileReference section */
 		0029168223CA292300FED5B8 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = SOURCE_ROOT; };
 		0029168423CA293800FED5B8 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		0029DB4F23CCA07900DB6DBE /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
+		0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "videos-for-tests.json"; sourceTree = SOURCE_ROOT; };
+		0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+ExtensionTests.swift"; sourceTree = "<group>"; };
+		0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		005DE2FA23C8A66B001D9ED8 /* Arzhig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arzhig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005DE30123C8A66B001D9ED8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		005DE30B23C8A66D001D9ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005DE30D23C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005DE31223C8A66D001D9ED8 /* arzhig-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		005DE31623C8A66D001D9ED8 /* arzhig_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_iosTests.swift; sourceTree = "<group>"; };
 		005DE31823C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_iosUITests.swift; sourceTree = "<group>"; };
@@ -80,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0029DB4E23CCA05B00DB6DBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0029DB4F23CCA07900DB6DBE /* Decodable+Extension.swift */,
+				0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */,
+				0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		005DE2F123C8A66A001D9ED8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +119,7 @@
 		005DE2FC23C8A66B001D9ED8 /* arzhig-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0029DB4E23CCA05B00DB6DBE /* Extensions */,
 				0029168223CA292300FED5B8 /* videos.json */,
 				005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */,
 				005DE30123C8A66B001D9ED8 /* MasterViewController.swift */,
@@ -119,7 +136,7 @@
 		005DE31523C8A66D001D9ED8 /* arzhig-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				005DE31623C8A66D001D9ED8 /* arzhig_iosTests.swift */,
+				0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */,
 				005DE31823C8A66D001D9ED8 /* Info.plist */,
 			);
 			path = "arzhig-iosTests";
@@ -249,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0029DB5223CCA0F300DB6DBE /* videos-for-tests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */,
 				005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */,
 				0029168523CA293800FED5B8 /* Video.swift in Sources */,
 				005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */,
+				0029DB5023CCA07900DB6DBE /* Decodable+Extension.swift in Sources */,
 				005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005DE31723C8A66D001D9ED8 /* arzhig_iosTests.swift in Sources */,
+				0029DB5423CCA11700DB6DBE /* Decodable+ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9L264PA4TX;
+				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = "arzhig-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9L264PA4TX;
+				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = "arzhig-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +514,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arzhig-ios.app/arzhig-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arzhig.app/Arzhig";
 			};
 			name = Debug;
 		};
@@ -516,7 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arzhig-ios.app/arzhig-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arzhig.app/Arzhig";
 			};
 			name = Release;
 		};

@@ -20,27 +20,3 @@ struct Video: Codable {
         case description
     }
 }
-
-extension Decodable {
-    static func loadCollectionFromBundle(
-        bundle: Bundle = Bundle.main,
-        resource: String? = "videos",
-        type: String? = "json"
-    ) -> [Self] {
-        do {
-            let resourcePath = try bundle
-                .path(forResource: resource, ofType: type)
-                .map { URL(fileURLWithPath: $0) }
-                .map { try Data(contentsOf: $0) }
-                .map { try JSONDecoder().decode([Self].self, from: $0) }
-            if let result = resourcePath {
-                return result
-            } else {
-                fatalError("Coudln't load video collection from bundle.")
-            }
-        } catch {
-            fatalError("Coudln't load video collection from bundle.")
-        }
-    }
-}
-
