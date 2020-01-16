@@ -14,12 +14,12 @@
 		0029DB5423CCA11700DB6DBE /* Decodable+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */; };
 		0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */; };
 		005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */; };
-		005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30123C8A66B001D9ED8 /* MasterViewController.swift */; };
-		005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30323C8A66B001D9ED8 /* DetailViewController.swift */; };
-		005DE30723C8A66B001D9ED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30523C8A66B001D9ED8 /* Main.storyboard */; };
+		005DE30223C8A66B001D9ED8 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30123C8A66B001D9ED8 /* VideoListViewController.swift */; };
+		005DE30423C8A66B001D9ED8 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE30323C8A66B001D9ED8 /* VideoDetailViewController.swift */; };
 		005DE30923C8A66D001D9ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30823C8A66D001D9ED8 /* Assets.xcassets */; };
 		005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */; };
 		005DE32223C8A66D001D9ED8 /* arzhig_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */; };
+		009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +48,8 @@
 		0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		005DE2FA23C8A66B001D9ED8 /* Arzhig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arzhig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		005DE30123C8A66B001D9ED8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		005DE30323C8A66B001D9ED8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		005DE30623C8A66B001D9ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		005DE30123C8A66B001D9ED8 /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		005DE30323C8A66B001D9ED8 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		005DE30823C8A66D001D9ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005DE30B23C8A66D001D9ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005DE30D23C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_iosUITests.swift; sourceTree = "<group>"; };
 		005DE32323C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +122,13 @@
 				0029DB4E23CCA05B00DB6DBE /* Extensions */,
 				0029168223CA292300FED5B8 /* videos.json */,
 				005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */,
-				005DE30123C8A66B001D9ED8 /* MasterViewController.swift */,
-				005DE30323C8A66B001D9ED8 /* DetailViewController.swift */,
-				005DE30523C8A66B001D9ED8 /* Main.storyboard */,
+				005DE30123C8A66B001D9ED8 /* VideoListViewController.swift */,
+				005DE30323C8A66B001D9ED8 /* VideoDetailViewController.swift */,
 				005DE30823C8A66D001D9ED8 /* Assets.xcassets */,
 				005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */,
 				005DE30D23C8A66D001D9ED8 /* Info.plist */,
 				0029168423CA293800FED5B8 /* Video.swift */,
+				009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */,
 			);
 			path = "arzhig-ios";
 			sourceTree = "<group>";
@@ -258,7 +258,6 @@
 				005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */,
 				0029168323CA292300FED5B8 /* videos.json in Resources */,
 				005DE30923C8A66D001D9ED8 /* Assets.xcassets in Resources */,
-				005DE30723C8A66B001D9ED8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +286,10 @@
 				0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */,
 				005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */,
 				0029168523CA293800FED5B8 /* Video.swift in Sources */,
-				005DE30223C8A66B001D9ED8 /* MasterViewController.swift in Sources */,
+				005DE30223C8A66B001D9ED8 /* VideoListViewController.swift in Sources */,
 				0029DB5023CCA07900DB6DBE /* Decodable+Extension.swift in Sources */,
-				005DE30423C8A66B001D9ED8 /* DetailViewController.swift in Sources */,
+				009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */,
+				005DE30423C8A66B001D9ED8 /* VideoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		005DE30523C8A66B001D9ED8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				005DE30623C8A66B001D9ED8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
