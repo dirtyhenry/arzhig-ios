@@ -12,7 +12,9 @@ class VideosCoordinator: NSObject {
     }
     
     func start() {
+        let videos = Video.loadCollectionFromBundle(resource: "videos", with: JSONDecoder.customEncoder())
         masterViewController.delegate = self
+        masterViewController.videos = videos
         let masterNavigationController = UINavigationController(rootViewController: masterViewController)
         let detailNavigationController = UINavigationController(rootViewController: detailViewController)
         
@@ -24,7 +26,7 @@ class VideosCoordinator: NSObject {
 }
 
 extension VideosCoordinator: VideoListViewControllerDelegate {
-    func videoListViewController(_: VideoListViewController, didSelectItem item: NSDate) {
+    func videoListViewController(_: VideoListViewController, didSelectItem item: Video) {
         detailViewController.detailItem = item
         detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         detailViewController.navigationItem.leftItemsSupplementBackButton = true

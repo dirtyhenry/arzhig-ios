@@ -31,7 +31,7 @@ class VideoDetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = detailItem {
             if let label = detailDescriptionLabel {
-                label.text = detail.description
+                label.text = detail.name
             }
         }
     }
@@ -42,7 +42,7 @@ class VideoDetailViewController: UIViewController {
         configureView()
     }
     
-    var detailItem: NSDate? {
+    var detailItem: Video? {
         didSet {
             // Update the view.
             configureView()

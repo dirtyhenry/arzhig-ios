@@ -122,13 +122,13 @@
 				0029DB4E23CCA05B00DB6DBE /* Extensions */,
 				0029168223CA292300FED5B8 /* videos.json */,
 				005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */,
+				009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */,
 				005DE30123C8A66B001D9ED8 /* VideoListViewController.swift */,
 				005DE30323C8A66B001D9ED8 /* VideoDetailViewController.swift */,
 				005DE30823C8A66D001D9ED8 /* Assets.xcassets */,
 				005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */,
 				005DE30D23C8A66D001D9ED8 /* Info.plist */,
 				0029168423CA293800FED5B8 /* Video.swift */,
-				009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */,
 			);
 			path = "arzhig-ios";
 			sourceTree = "<group>";

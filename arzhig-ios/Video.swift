@@ -5,7 +5,7 @@ struct Video: Codable {
     let name: String
     let downloadURL: URL
     let sha256: String
-    let description: String
+    let description: String?
     let createdAt: Date
     let updatedAt: Date
     
