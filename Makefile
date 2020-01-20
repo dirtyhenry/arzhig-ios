@@ -1,5 +1,7 @@
 install:
-	make install
+	yarn install
+	pip install linode-cli --upgrade
+	pip install boto
 
 open:
 	open arzhig-ios.xcodeproj
@@ -9,5 +11,7 @@ clean:
 	rm videos.json
 
 create-videos-file:
-	yarn install
 	node scripts/fetchVideos.js
+
+setup-linode:
+	linode-cli obj --help

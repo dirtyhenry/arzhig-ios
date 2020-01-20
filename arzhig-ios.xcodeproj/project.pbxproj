@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0029168323CA292300FED5B8 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029168223CA292300FED5B8 /* videos.json */; };
-		0029168523CA293800FED5B8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029168423CA293800FED5B8 /* Video.swift */; };
+		0029168523CA293800FED5B8 /* VideoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029168423CA293800FED5B8 /* VideoDTO.swift */; };
 		0029DB5023CCA07900DB6DBE /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB4F23CCA07900DB6DBE /* Decodable+Extension.swift */; };
 		0029DB5223CCA0F300DB6DBE /* videos-for-tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */; };
 		0029DB5423CCA11700DB6DBE /* Decodable+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */; };
@@ -20,6 +20,8 @@
 		005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */; };
 		005DE32223C8A66D001D9ED8 /* arzhig_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */; };
 		009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */; };
+		009D814023D4881B00CAAB08 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D813F23D4881B00CAAB08 /* Video.swift */; };
+		009D814223D48BB200CAAB08 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D814123D48BB200CAAB08 /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0029168223CA292300FED5B8 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = SOURCE_ROOT; };
-		0029168423CA293800FED5B8 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		0029168423CA293800FED5B8 /* VideoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDTO.swift; sourceTree = "<group>"; };
 		0029DB4F23CCA07900DB6DBE /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
 		0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "videos-for-tests.json"; sourceTree = SOURCE_ROOT; };
 		0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+ExtensionTests.swift"; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_iosUITests.swift; sourceTree = "<group>"; };
 		005DE32323C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
+		009D813F23D4881B00CAAB08 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		009D814123D48BB200CAAB08 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +126,15 @@
 				0029DB4E23CCA05B00DB6DBE /* Extensions */,
 				0029168223CA292300FED5B8 /* videos.json */,
 				005DE2FD23C8A66B001D9ED8 /* AppDelegate.swift */,
+				0029168423CA293800FED5B8 /* VideoDTO.swift */,
+				009D813F23D4881B00CAAB08 /* Video.swift */,
 				009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */,
 				005DE30123C8A66B001D9ED8 /* VideoListViewController.swift */,
 				005DE30323C8A66B001D9ED8 /* VideoDetailViewController.swift */,
 				005DE30823C8A66D001D9ED8 /* Assets.xcassets */,
 				005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */,
 				005DE30D23C8A66D001D9ED8 /* Info.plist */,
-				0029168423CA293800FED5B8 /* Video.swift */,
+				009D814123D48BB200CAAB08 /* VideoCell.swift */,
 			);
 			path = "arzhig-ios";
 			sourceTree = "<group>";
@@ -285,9 +291,11 @@
 			files = (
 				0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */,
 				005DE2FE23C8A66B001D9ED8 /* AppDelegate.swift in Sources */,
-				0029168523CA293800FED5B8 /* Video.swift in Sources */,
+				009D814223D48BB200CAAB08 /* VideoCell.swift in Sources */,
+				0029168523CA293800FED5B8 /* VideoDTO.swift in Sources */,
 				005DE30223C8A66B001D9ED8 /* VideoListViewController.swift in Sources */,
 				0029DB5023CCA07900DB6DBE /* Decodable+Extension.swift in Sources */,
+				009D814023D4881B00CAAB08 /* Video.swift in Sources */,
 				009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */,
 				005DE30423C8A66B001D9ED8 /* VideoDetailViewController.swift in Sources */,
 			);

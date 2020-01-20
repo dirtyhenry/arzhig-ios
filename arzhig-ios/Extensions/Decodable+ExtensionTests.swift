@@ -3,7 +3,7 @@ import XCTest
 
 class DecodableExtensionTests: XCTestCase {
     func testLoadCollectionFromBundle() {
-        let videos = Video.loadCollectionFromBundle(
+        let videos = VideoDTO.loadCollectionFromBundle(
             bundle: Bundle(for: DecodableExtensionTests.self),
             resource: "videos-for-tests",
             with: JSONDecoder.customEncoder())
@@ -26,7 +26,7 @@ class DecodableExtensionTests: XCTestCase {
 
     func testLoadCollectionFromBundlePerformance() {
         self.measure {
-            _ = Video.loadCollectionFromBundle(
+            _ = VideoDTO.loadCollectionFromBundle(
             bundle: Bundle(for: DecodableExtensionTests.self),
             resource: "videos-for-tests",
             with: JSONDecoder.customEncoder())
