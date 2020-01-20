@@ -7,29 +7,68 @@ class VideosCoordinator: NSObject {
     let masterViewController = VideoListViewController()
     let detailViewController = VideoDetailViewController()
     
+    var sessionTasks: [URLSessionDownloadTask] = []
+    
     override init() {
         super.init()
     }
     
     func start() {
-        let videos = Video.loadCollectionFromBundle(resource: "videos", with: JSONDecoder.customEncoder())
+        let videos = VideoDTO.loadCollectionFromBundle(resource: "videos", with: JSONDecoder.customEncoder())
         masterViewController.delegate = self
-        masterViewController.videos = videos
+        masterViewController.videos = videos.map { Video(dto: $0) }
         let masterNavigationController = UINavigationController(rootViewController: masterViewController)
         let detailNavigationController = UINavigationController(rootViewController: detailViewController)
         
         splitViewController.viewControllers = [masterNavigationController, detailNavigationController]
-
+        
         window.rootViewController = splitViewController
         window.makeKeyAndVisible()
+    }
+    
+    // FIXME: setup proper architecture here!
+    func download(video: Video) {
+        video.state = .downloadInProgress
+        let downloadTask = URLSession.shared.downloadTask(with: video.downloadURL, completionHandler: { (tempPathURL, urlResponse, error) in
+            guard let tempPathURL = tempPathURL, error == nil else {
+                video.state = .toBeDownloaded
+                return
+            }
+            
+            do {
+                let documentsDirectoryURL = try FileManager.default.url(for: .documentDirectory,
+                                                                        in: .userDomainMask,
+                                                                        appropriateFor: nil,
+                                                                        create: false)
+                try FileManager.default.moveItem(at: tempPathURL, to: documentsDirectoryURL.appendingPathComponent(video.uuid))
+                video.state = .playable
+                DispatchQueue.main.async {
+                    self.masterViewController.tableView.reloadData()
+                }
+            } catch {
+                print("Error: \(error)")
+            }
+        })
+        video.downloadProgress = downloadTask.progress
+        sessionTasks.append(downloadTask)
+        downloadTask.resume()
+        masterViewController.tableView.reloadData()
     }
 }
 
 extension VideosCoordinator: VideoListViewControllerDelegate {
     func videoListViewController(_: VideoListViewController, didSelectItem item: Video) {
-        detailViewController.detailItem = item
-        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        detailViewController.navigationItem.leftItemsSupplementBackButton = true
-        splitViewController.showDetailViewController(detailViewController, sender: self)
+        // FIXME: setup proper architecture here!
+        switch item.state {
+        case .toBeDownloaded:
+            download(video: item)
+        case .downloadInProgress:
+            debugPrint("Selected video being downloaded...")
+        case .playable:
+            detailViewController.detailItem = item
+            detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+            detailViewController.navigationItem.leftItemsSupplementBackButton = true
+            splitViewController.showDetailViewController(detailViewController, sender: self)
+        }
     }
 }

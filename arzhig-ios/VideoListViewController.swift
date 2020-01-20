@@ -15,7 +15,7 @@ class VideoListViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
 
         // Register
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(VideoCell.self, forCellReuseIdentifier: "VideoCell")
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,10 +34,12 @@ class VideoListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as? VideoCell else {
+            fatalError("Couldn't dequeue a cell with the given identifier.")
+        }
         let video = videos[indexPath.row]
-        cell.textLabel?.text = video.name
-        cell.detailTextLabel?.text = video.description
+        cell.headlineLabel.text = video.name
+        cell.bodyLabel.text = video.stateAsString
         return cell
     }
     
