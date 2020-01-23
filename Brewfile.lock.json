@@ -1,0 +1,22 @@
+{
+  "entries": {
+    "brew": {
+      "youtube-dl": {
+        "version": "2020.01.15",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.4",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "2bfb924f6fd765b006d45e6f0b36c35ad53b8b40",
+        "CLT": "",
+        "Xcode": "11.3.1",
+        "macOS": "10.15.1"
+      }
+    }
+  }
+}

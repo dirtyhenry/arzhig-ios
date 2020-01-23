@@ -2,6 +2,7 @@ install:
 	yarn install
 	pip install linode-cli --upgrade
 	pip install boto
+	brew bundle
 
 open:
 	open arzhig-ios.xcodeproj
