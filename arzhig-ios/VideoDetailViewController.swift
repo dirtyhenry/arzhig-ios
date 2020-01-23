@@ -1,7 +1,9 @@
 import UIKit
+import AVKit
+import AVFoundation
 
 class VideoDetailViewController: UIViewController {
-    weak var detailDescriptionLabel: UILabel?
+    weak var playButton: UIButton?
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -15,23 +17,41 @@ class VideoDetailViewController: UIViewController {
         view = UIView()
         view.backgroundColor = .white
         
-        let tmpLabel = UILabel()
-        tmpLabel.translatesAutoresizingMaskIntoConstraints = false
-        tmpLabel.text = "👋"
-        detailDescriptionLabel = tmpLabel
-        view.addSubview(tmpLabel)
+        let tmpPlayButton = UIButton(type: .system)
+        tmpPlayButton.translatesAutoresizingMaskIntoConstraints = false
+        tmpPlayButton.setTitle("👋", for: .normal)
+        tmpPlayButton.addTarget(self, action: #selector(playVideo(_:)), for: .touchUpInside)
+        
+        playButton = tmpPlayButton
+        view.addSubview(tmpPlayButton)
         
         NSLayoutConstraint.activate([
-            tmpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            tmpLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            tmpPlayButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tmpPlayButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.name
+            if let button = playButton {
+                button.setTitle("▶️ \(detail.name)", for: .normal)
+            }
+        }
+    }
+    
+    @IBAction func playVideo(_ sender: UIButton) {
+        if let video = detailItem {
+            // Create an AVPlayer, passing it the HTTP Live Streaming URL.
+            let player = AVPlayer(url: video.downloadURL)
+            
+            // Create a new AVPlayerViewController and pass it a reference to the player.
+            let controller = AVPlayerViewController()
+            controller.player = player
+            
+            // Modally present the player and call the player's play() method when complete.
+            present(controller, animated: true) {
+                player.play()
             }
         }
     }
