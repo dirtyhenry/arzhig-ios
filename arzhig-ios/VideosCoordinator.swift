@@ -16,7 +16,20 @@ class VideosCoordinator: NSObject {
     func start() {
         let videos = VideoDTO.loadCollectionFromBundle(resource: "videos", with: JSONDecoder.customEncoder())
         masterViewController.delegate = self
-        masterViewController.videos = videos.map { Video(dto: $0) }
+        masterViewController.videos = videos
+            .map { dto in
+                let transformedVideo = Video(dto: dto)
+                if FileManager.default.fileExists(atPath: transformedVideo.filesystemPath) {
+                    debugPrint("Found video at \(transformedVideo.filesystemPath)")
+                    transformedVideo.state = .playable
+                } else {
+                    debugPrint("Did not find video at \(transformedVideo.filesystemPath)")
+                    transformedVideo.state = .toBeDownloaded
+                }
+                
+                return transformedVideo
+        }
+        
         let masterNavigationController = UINavigationController(rootViewController: masterViewController)
         let detailNavigationController = UINavigationController(rootViewController: detailViewController)
         
