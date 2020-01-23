@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class VideosCoordinator: NSObject {
     let window = UIWindow(frame: UIScreen.main.bounds)
@@ -14,6 +15,8 @@ class VideosCoordinator: NSObject {
     }
     
     func start() {
+        setUpAudioSession()
+        
         let videos = VideoDTO.loadCollectionFromBundle(resource: "videos", with: JSONDecoder.customEncoder())
         masterViewController.delegate = self
         masterViewController.videos = videos
@@ -37,6 +40,16 @@ class VideosCoordinator: NSObject {
         
         window.rootViewController = splitViewController
         window.makeKeyAndVisible()
+    }
+    
+    private func setUpAudioSession() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback, mode: .moviePlayback)
+        }
+        catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
     }
     
     // FIXME: setup proper architecture here!
