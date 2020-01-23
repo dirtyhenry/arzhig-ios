@@ -29,6 +29,8 @@ class VideosCoordinator: NSObject {
     // FIXME: setup proper architecture here!
     func download(video: Video) {
         video.state = .downloadInProgress
+
+        debugPrint("Downloading to \(video.filesystemURL)")
         let downloadTask = URLSession.shared.downloadTask(with: video.downloadURL, completionHandler: { (tempPathURL, urlResponse, error) in
             guard let tempPathURL = tempPathURL, error == nil else {
                 video.state = .toBeDownloaded
@@ -36,11 +38,10 @@ class VideosCoordinator: NSObject {
             }
             
             do {
-                let documentsDirectoryURL = try FileManager.default.url(for: .documentDirectory,
-                                                                        in: .userDomainMask,
-                                                                        appropriateFor: nil,
-                                                                        create: false)
-                try FileManager.default.moveItem(at: tempPathURL, to: documentsDirectoryURL.appendingPathComponent(video.uuid))
+                try FileManager.default.moveItem(
+                    at: tempPathURL,
+                    to: video.filesystemURL
+                )
                 video.state = .playable
                 DispatchQueue.main.async {
                     self.masterViewController.tableView.reloadData()

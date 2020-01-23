@@ -34,3 +34,17 @@ class Video {
         }
     }
 }
+
+extension Video {
+    var filesystemURL: URL {
+        let documentsDirectoryURL = try! FileManager.default.url(for: .documentDirectory,
+                                                                 in: .userDomainMask,
+                                                                 appropriateFor: nil,
+                                                                 create: false)
+        return documentsDirectoryURL.appendingPathComponent("\(uuid).mp4")
+    }
+    
+    var filesystemPath: String {
+        return "\(NSHomeDirectory())/Documents/\(uuid).mp4"
+    }
+}
