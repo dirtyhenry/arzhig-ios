@@ -1,6 +1,8 @@
 #!/usr/bin/env bash -e
 
+# Download the best MP4 video possible
 youtube-dl \
-  --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' \
+  --format 'best' \
   --write-thumbnail \
   $1
+
