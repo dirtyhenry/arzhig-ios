@@ -1,7 +1,24 @@
 import UIKit
 
-class AppCoordinator: NSObject {
+protocol CoordinatorProtocol: NSObjectProtocol {
+    var rootViewController: UIViewController { get }
+    
+    func start() -> Void
+}
+
+class AppCoordinator: NSObject, CoordinatorProtocol {
+    var rootViewController: UIViewController {
+        return tabBarController
+    }
+    
     let window = UIWindow(frame: UIScreen.main.bounds)
+    
+    let videosCoordinator = VideosCoordinator()
+    let drawingCoordinator = DrawingCoordinator()
+    
+    var coordinators: [CoordinatorProtocol] {
+        return [videosCoordinator, drawingCoordinator]
+    }
     
     let tabBarController: UITabBarController
     
@@ -12,18 +29,14 @@ class AppCoordinator: NSObject {
     }
     
     func start() {
-        let videosCoordinator = VideosCoordinator()
-        let drawingCoordinator = DrawingCoordinator()
+        coordinators.forEach { $0.start() }
         
-        videosCoordinator.splitViewController.tabBarItem = UITabBarItem(title: "📺", image: nil, selectedImage: nil)
+        videosCoordinator.rootViewController.tabBarItem = UITabBarItem(title: "📺", image: nil, selectedImage: nil)
         drawingCoordinator.rootViewController.tabBarItem = UITabBarItem(title: "🎨", image: nil, selectedImage: nil)
 
-        tabBarController.viewControllers = [
-            videosCoordinator.splitViewController,
-            drawingCoordinator.rootViewController
-        ]
-        
-        window.rootViewController = tabBarController
+        tabBarController.viewControllers = coordinators.map { $0.rootViewController }
+
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
 }

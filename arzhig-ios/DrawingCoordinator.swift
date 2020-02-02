@@ -1,6 +1,6 @@
 import UIKit
 
-class DrawingCoordinator: NSObject {
+class DrawingCoordinator: NSObject, CoordinatorProtocol {
     let rootViewController: UIViewController
     
     override init() {

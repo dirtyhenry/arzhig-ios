@@ -1,7 +1,11 @@
 import UIKit
 import AVFoundation
 
-class VideosCoordinator: NSObject {
+class VideosCoordinator: NSObject, CoordinatorProtocol {
+    var rootViewController: UIViewController {
+        return splitViewController
+    }
+    
     let splitViewController = UISplitViewController()
     let masterViewController = VideoListViewController()
     let detailViewController = VideoDetailViewController()
