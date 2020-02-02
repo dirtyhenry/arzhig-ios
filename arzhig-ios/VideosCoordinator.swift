@@ -1,8 +1,10 @@
 import UIKit
 import AVFoundation
 
-class VideosCoordinator: NSObject {
-    let window = UIWindow(frame: UIScreen.main.bounds)
+class VideosCoordinator: NSObject, CoordinatorProtocol {
+    var rootViewController: UIViewController {
+        return splitViewController
+    }
     
     let splitViewController = UISplitViewController()
     let masterViewController = VideoListViewController()
@@ -37,9 +39,6 @@ class VideosCoordinator: NSObject {
         let detailNavigationController = UINavigationController(rootViewController: detailViewController)
         
         splitViewController.viewControllers = [masterNavigationController, detailNavigationController]
-        
-        window.rootViewController = splitViewController
-        window.makeKeyAndVisible()
     }
     
     private func setUpAudioSession() {

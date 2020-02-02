@@ -10,7 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var coordinator: VideosCoordinator?
+    var coordinator: AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         debugPrint("Home directory is: \(NSHomeDirectory())")
         #endif
 
-        self.coordinator = VideosCoordinator()
+        self.coordinator = AppCoordinator()
         self.coordinator?.start()
         
         return true
