@@ -13,6 +13,14 @@
 		0029DB5223CCA0F300DB6DBE /* videos-for-tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */; };
 		0029DB5423CCA11700DB6DBE /* Decodable+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */; };
 		0029DB5623CCA80700DB6DBE /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */; };
+		0034F8AC243F5D130096F60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034F8AB243F5D130096F60F /* AppDelegate.swift */; };
+		0034F8AE243F5D130096F60F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034F8AD243F5D130096F60F /* SceneDelegate.swift */; };
+		0034F8B0243F5D130096F60F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034F8AF243F5D130096F60F /* ContentView.swift */; };
+		0034F8B2243F5D160096F60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0034F8B1243F5D160096F60F /* Assets.xcassets */; };
+		0034F8B5243F5D160096F60F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0034F8B4243F5D160096F60F /* Preview Assets.xcassets */; };
+		0034F8B8243F5D160096F60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0034F8B6243F5D160096F60F /* LaunchScreen.storyboard */; };
+		0034F8C3243F5D160096F60F /* arzhig_parents_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034F8C2243F5D160096F60F /* arzhig_parents_iosTests.swift */; };
+		0034F8CE243F5D160096F60F /* arzhig_parents_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034F8CD243F5D160096F60F /* arzhig_parents_iosUITests.swift */; };
 		005CB43D23E3444100E71970 /* DrawingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CB43C23E3444100E71970 /* DrawingCoordinator.swift */; };
 		005CB43F23E3447A00E71970 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CB43E23E3447A00E71970 /* DrawingViewController.swift */; };
 		005CB44123E344A200E71970 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CB44023E344A200E71970 /* AppCoordinator.swift */; };
@@ -28,6 +36,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0034F8BF243F5D160096F60F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005DE2F223C8A66A001D9ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0034F8A8243F5D130096F60F;
+			remoteInfo = "arzhig-parents-ios";
+		};
+		0034F8CA243F5D160096F60F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005DE2F223C8A66A001D9ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0034F8A8243F5D130096F60F;
+			remoteInfo = "arzhig-parents-ios";
+		};
 		005DE31323C8A66D001D9ED8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 005DE2F223C8A66A001D9ED8 /* Project object */;
@@ -51,6 +73,20 @@
 		0029DB5123CCA0F300DB6DBE /* videos-for-tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "videos-for-tests.json"; sourceTree = SOURCE_ROOT; };
 		0029DB5323CCA11700DB6DBE /* Decodable+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+ExtensionTests.swift"; sourceTree = "<group>"; };
 		0029DB5523CCA80700DB6DBE /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		0034F8A9243F5D130096F60F /* arzhig-parents-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arzhig-parents-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0034F8AB243F5D130096F60F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0034F8AD243F5D130096F60F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0034F8AF243F5D130096F60F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0034F8B1243F5D160096F60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0034F8B4243F5D160096F60F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0034F8B7243F5D160096F60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0034F8B9243F5D160096F60F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0034F8BE243F5D160096F60F /* arzhig-parents-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-parents-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0034F8C2243F5D160096F60F /* arzhig_parents_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_parents_iosTests.swift; sourceTree = "<group>"; };
+		0034F8C4243F5D160096F60F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0034F8C9243F5D160096F60F /* arzhig-parents-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-parents-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0034F8CD243F5D160096F60F /* arzhig_parents_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_parents_iosUITests.swift; sourceTree = "<group>"; };
+		0034F8CF243F5D160096F60F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005CB43C23E3444100E71970 /* DrawingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCoordinator.swift; sourceTree = "<group>"; };
 		005CB43E23E3447A00E71970 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		005CB44023E344A200E71970 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -72,6 +108,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0034F8A6243F5D130096F60F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8BB243F5D160096F60F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8C6243F5D160096F60F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005DE2F723C8A66B001D9ED8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,12 +163,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0034F8AA243F5D130096F60F /* arzhig-parents-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0034F8AB243F5D130096F60F /* AppDelegate.swift */,
+				0034F8AD243F5D130096F60F /* SceneDelegate.swift */,
+				0034F8AF243F5D130096F60F /* ContentView.swift */,
+				0034F8B1243F5D160096F60F /* Assets.xcassets */,
+				0034F8B6243F5D160096F60F /* LaunchScreen.storyboard */,
+				0034F8B9243F5D160096F60F /* Info.plist */,
+				0034F8B3243F5D160096F60F /* Preview Content */,
+			);
+			path = "arzhig-parents-ios";
+			sourceTree = "<group>";
+		};
+		0034F8B3243F5D160096F60F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0034F8B4243F5D160096F60F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0034F8C1243F5D160096F60F /* arzhig-parents-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0034F8C2243F5D160096F60F /* arzhig_parents_iosTests.swift */,
+				0034F8C4243F5D160096F60F /* Info.plist */,
+			);
+			path = "arzhig-parents-iosTests";
+			sourceTree = "<group>";
+		};
+		0034F8CC243F5D160096F60F /* arzhig-parents-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0034F8CD243F5D160096F60F /* arzhig_parents_iosUITests.swift */,
+				0034F8CF243F5D160096F60F /* Info.plist */,
+			);
+			path = "arzhig-parents-iosUITests";
+			sourceTree = "<group>";
+		};
 		005DE2F123C8A66A001D9ED8 = {
 			isa = PBXGroup;
 			children = (
 				005DE2FC23C8A66B001D9ED8 /* arzhig-ios */,
 				005DE31523C8A66D001D9ED8 /* arzhig-iosTests */,
 				005DE32023C8A66D001D9ED8 /* arzhig-iosUITests */,
+				0034F8AA243F5D130096F60F /* arzhig-parents-ios */,
+				0034F8C1243F5D160096F60F /* arzhig-parents-iosTests */,
+				0034F8CC243F5D160096F60F /* arzhig-parents-iosUITests */,
 				005DE2FB23C8A66B001D9ED8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +222,9 @@
 				005DE2FA23C8A66B001D9ED8 /* Arzhig.app */,
 				005DE31223C8A66D001D9ED8 /* arzhig-iosTests.xctest */,
 				005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */,
+				0034F8A9243F5D130096F60F /* arzhig-parents-ios.app */,
+				0034F8BE243F5D160096F60F /* arzhig-parents-iosTests.xctest */,
+				0034F8C9243F5D160096F60F /* arzhig-parents-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +272,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0034F8A8243F5D130096F60F /* arzhig-parents-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0034F8D6243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-ios" */;
+			buildPhases = (
+				0034F8A5243F5D130096F60F /* Sources */,
+				0034F8A6243F5D130096F60F /* Frameworks */,
+				0034F8A7243F5D130096F60F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "arzhig-parents-ios";
+			productName = "arzhig-parents-ios";
+			productReference = 0034F8A9243F5D130096F60F /* arzhig-parents-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0034F8BD243F5D160096F60F /* arzhig-parents-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0034F8D7243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-iosTests" */;
+			buildPhases = (
+				0034F8BA243F5D160096F60F /* Sources */,
+				0034F8BB243F5D160096F60F /* Frameworks */,
+				0034F8BC243F5D160096F60F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0034F8C0243F5D160096F60F /* PBXTargetDependency */,
+			);
+			name = "arzhig-parents-iosTests";
+			productName = "arzhig-parents-iosTests";
+			productReference = 0034F8BE243F5D160096F60F /* arzhig-parents-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0034F8C8243F5D160096F60F /* arzhig-parents-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0034F8D8243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-iosUITests" */;
+			buildPhases = (
+				0034F8C5243F5D160096F60F /* Sources */,
+				0034F8C6243F5D160096F60F /* Frameworks */,
+				0034F8C7243F5D160096F60F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0034F8CB243F5D160096F60F /* PBXTargetDependency */,
+			);
+			name = "arzhig-parents-iosUITests";
+			productName = "arzhig-parents-iosUITests";
+			productReference = 0034F8C9243F5D160096F60F /* arzhig-parents-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		005DE2F923C8A66B001D9ED8 /* arzhig-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 005DE32623C8A66D001D9ED8 /* Build configuration list for PBXNativeTarget "arzhig-ios" */;
@@ -228,10 +384,21 @@
 		005DE2F223C8A66A001D9ED8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = mickf.net;
 				TargetAttributes = {
+					0034F8A8243F5D130096F60F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0034F8BD243F5D160096F60F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0034F8A8243F5D130096F60F;
+					};
+					0034F8C8243F5D160096F60F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0034F8A8243F5D130096F60F;
+					};
 					005DE2F923C8A66B001D9ED8 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -261,11 +428,38 @@
 				005DE2F923C8A66B001D9ED8 /* arzhig-ios */,
 				005DE31123C8A66D001D9ED8 /* arzhig-iosTests */,
 				005DE31C23C8A66D001D9ED8 /* arzhig-iosUITests */,
+				0034F8A8243F5D130096F60F /* arzhig-parents-ios */,
+				0034F8BD243F5D160096F60F /* arzhig-parents-iosTests */,
+				0034F8C8243F5D160096F60F /* arzhig-parents-iosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0034F8A7243F5D130096F60F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034F8B8243F5D160096F60F /* LaunchScreen.storyboard in Resources */,
+				0034F8B5243F5D160096F60F /* Preview Assets.xcassets in Resources */,
+				0034F8B2243F5D160096F60F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8BC243F5D160096F60F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8C7243F5D160096F60F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005DE2F823C8A66B001D9ED8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +488,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0034F8A5243F5D130096F60F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034F8AC243F5D130096F60F /* AppDelegate.swift in Sources */,
+				0034F8AE243F5D130096F60F /* SceneDelegate.swift in Sources */,
+				0034F8B0243F5D130096F60F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8BA243F5D160096F60F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034F8C3243F5D160096F60F /* arzhig_parents_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0034F8C5243F5D160096F60F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034F8CE243F5D160096F60F /* arzhig_parents_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005DE2F623C8A66B001D9ED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +552,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0034F8C0243F5D160096F60F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0034F8A8243F5D130096F60F /* arzhig-parents-ios */;
+			targetProxy = 0034F8BF243F5D160096F60F /* PBXContainerItemProxy */;
+		};
+		0034F8CB243F5D160096F60F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0034F8A8243F5D130096F60F /* arzhig-parents-ios */;
+			targetProxy = 0034F8CA243F5D160096F60F /* PBXContainerItemProxy */;
+		};
 		005DE31423C8A66D001D9ED8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 005DE2F923C8A66B001D9ED8 /* arzhig-ios */;
@@ -345,6 +575,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0034F8B6243F5D160096F60F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0034F8B7243F5D160096F60F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,6 +594,130 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0034F8D0243F5D160096F60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"arzhig-parents-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "arzhig-parents-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0034F8D1243F5D160096F60F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"arzhig-parents-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "arzhig-parents-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0034F8D2243F5D160096F60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = "arzhig-parents-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arzhig-parents-ios.app/arzhig-parents-ios";
+			};
+			name = Debug;
+		};
+		0034F8D3243F5D160096F60F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = "arzhig-parents-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arzhig-parents-ios.app/arzhig-parents-ios";
+			};
+			name = Release;
+		};
+		0034F8D4243F5D160096F60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = "arzhig-parents-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "arzhig-parents-ios";
+			};
+			name = Debug;
+		};
+		0034F8D5243F5D160096F60F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = "arzhig-parents-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mickf.arzhig-parents-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "arzhig-parents-ios";
+			};
+			name = Release;
+		};
 		005DE32423C8A66D001D9ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,6 +957,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0034F8D6243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0034F8D0243F5D160096F60F /* Debug */,
+				0034F8D1243F5D160096F60F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0034F8D7243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0034F8D2243F5D160096F60F /* Debug */,
+				0034F8D3243F5D160096F60F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0034F8D8243F5D160096F60F /* Build configuration list for PBXNativeTarget "arzhig-parents-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0034F8D4243F5D160096F60F /* Debug */,
+				0034F8D5243F5D160096F60F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		005DE2F523C8A66A001D9ED8 /* Build configuration list for PBXProject "arzhig-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
