@@ -33,6 +33,14 @@
 		009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */; };
 		009D814023D4881B00CAAB08 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D813F23D4881B00CAAB08 /* Video.swift */; };
 		009D814223D48BB200CAAB08 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D814123D48BB200CAAB08 /* VideoCell.swift */; };
+		00C7799A2440CDC600C64055 /* RainForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779992440CDC600C64055 /* RainForecastList.swift */; };
+		00C7799C2440CDDF00C64055 /* RainForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7799B2440CDDF00C64055 /* RainForecastRow.swift */; };
+		00C7799E2440CE1200C64055 /* RainForecastDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7799D2440CE1200C64055 /* RainForecastDetail.swift */; };
+		00C779A62440CE2D00C64055 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A02440CE2D00C64055 /* WeatherService.swift */; };
+		00C779A82440CE2D00C64055 /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A32440CE2D00C64055 /* TinyNetworking.swift */; };
+		00C779A92440CE2D00C64055 /* RainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A52440CE2D00C64055 /* RainForecast.swift */; };
+		00C779AA2440CE8A00C64055 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */; };
+		00C779AC2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +113,14 @@
 		009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
 		009D813F23D4881B00CAAB08 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		009D814123D48BB200CAAB08 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		00C779992440CDC600C64055 /* RainForecastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainForecastList.swift; sourceTree = "<group>"; };
+		00C7799B2440CDDF00C64055 /* RainForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainForecastRow.swift; sourceTree = "<group>"; };
+		00C7799D2440CE1200C64055 /* RainForecastDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainForecastDetail.swift; sourceTree = "<group>"; };
+		00C779A02440CE2D00C64055 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
+		00C779A32440CE2D00C64055 /* TinyNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworking.swift; sourceTree = "<group>"; };
+		00C779A52440CE2D00C64055 /* RainForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainForecast.swift; sourceTree = "<group>"; };
+		00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ArzhigParentsConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +182,10 @@
 		0034F8AA243F5D130096F60F /* arzhig-parents-ios */ = {
 			isa = PBXGroup;
 			children = (
+				00C779A42440CE2D00C64055 /* Model */,
+				00C7799F2440CE2D00C64055 /* Services */,
+				00C779A22440CE2D00C64055 /* Third-party-code */,
+				00C779982440CDAE00C64055 /* RainForecast */,
 				0034F8AB243F5D130096F60F /* AppDelegate.swift */,
 				0034F8AD243F5D130096F60F /* SceneDelegate.swift */,
 				0034F8AF243F5D130096F60F /* ContentView.swift */,
@@ -173,6 +193,7 @@
 				0034F8B6243F5D160096F60F /* LaunchScreen.storyboard */,
 				0034F8B9243F5D160096F60F /* Info.plist */,
 				0034F8B3243F5D160096F60F /* Preview Content */,
+				00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */,
 			);
 			path = "arzhig-parents-ios";
 			sourceTree = "<group>";
@@ -267,6 +288,41 @@
 				005DE32323C8A66D001D9ED8 /* Info.plist */,
 			);
 			path = "arzhig-iosUITests";
+			sourceTree = "<group>";
+		};
+		00C779982440CDAE00C64055 /* RainForecast */ = {
+			isa = PBXGroup;
+			children = (
+				00C779992440CDC600C64055 /* RainForecastList.swift */,
+				00C7799B2440CDDF00C64055 /* RainForecastRow.swift */,
+				00C7799D2440CE1200C64055 /* RainForecastDetail.swift */,
+			);
+			path = RainForecast;
+			sourceTree = "<group>";
+		};
+		00C7799F2440CE2D00C64055 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00C779A02440CE2D00C64055 /* WeatherService.swift */,
+				00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00C779A22440CE2D00C64055 /* Third-party-code */ = {
+			isa = PBXGroup;
+			children = (
+				00C779A32440CE2D00C64055 /* TinyNetworking.swift */,
+			);
+			path = "Third-party-code";
+			sourceTree = "<group>";
+		};
+		00C779A42440CE2D00C64055 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00C779A52440CE2D00C64055 /* RainForecast.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +499,7 @@
 				0034F8B8243F5D160096F60F /* LaunchScreen.storyboard in Resources */,
 				0034F8B5243F5D160096F60F /* Preview Assets.xcassets in Resources */,
 				0034F8B2243F5D160096F60F /* Assets.xcassets in Resources */,
+				00C779AC2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,8 +550,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0034F8AC243F5D130096F60F /* AppDelegate.swift in Sources */,
+				00C779A92440CE2D00C64055 /* RainForecast.swift in Sources */,
+				00C7799E2440CE1200C64055 /* RainForecastDetail.swift in Sources */,
 				0034F8AE243F5D130096F60F /* SceneDelegate.swift in Sources */,
+				00C7799A2440CDC600C64055 /* RainForecastList.swift in Sources */,
+				00C7799C2440CDDF00C64055 /* RainForecastRow.swift in Sources */,
+				00C779A82440CE2D00C64055 /* TinyNetworking.swift in Sources */,
 				0034F8B0243F5D130096F60F /* ContentView.swift in Sources */,
+				00C779A62440CE2D00C64055 /* WeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C779AA2440CE8A00C64055 /* WeatherServiceTests.swift in Sources */,
 				0034F8C3243F5D160096F60F /* arzhig_parents_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +660,7 @@
 /* Begin XCBuildConfiguration section */
 		0034F8D0243F5D160096F60F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +681,7 @@
 		};
 		0034F8D1243F5D160096F60F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
