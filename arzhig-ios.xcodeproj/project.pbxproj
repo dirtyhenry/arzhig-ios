@@ -41,6 +41,13 @@
 		00C779A92440CE2D00C64055 /* RainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A52440CE2D00C64055 /* RainForecast.swift */; };
 		00C779AA2440CE8A00C64055 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */; };
 		00C779AC2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */; };
+		00C779B42440D0CD00C64055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779B32440D0CD00C64055 /* AppDelegate.swift */; };
+		00C779B62440D0CD00C64055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779B52440D0CD00C64055 /* ContentView.swift */; };
+		00C779B82440D0D100C64055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C779B72440D0D100C64055 /* Assets.xcassets */; };
+		00C779BB2440D0D100C64055 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C779BA2440D0D100C64055 /* Preview Assets.xcassets */; };
+		00C779BE2440D0D100C64055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C779BC2440D0D100C64055 /* Main.storyboard */; };
+		00C779CA2440D0D100C64055 /* ArzhigParentsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779C92440D0D100C64055 /* ArzhigParentsMacTests.swift */; };
+		00C779D52440D0D100C64055 /* ArzhigParentsMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779D42440D0D100C64055 /* ArzhigParentsMacUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 005DE2F923C8A66B001D9ED8;
 			remoteInfo = "arzhig-ios";
+		};
+		00C779C62440D0D100C64055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005DE2F223C8A66A001D9ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C779B02440D0CD00C64055;
+			remoteInfo = ArzhigParentsMac;
+		};
+		00C779D12440D0D100C64055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005DE2F223C8A66A001D9ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C779B02440D0CD00C64055;
+			remoteInfo = ArzhigParentsMac;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -121,6 +142,20 @@
 		00C779A32440CE2D00C64055 /* TinyNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworking.swift; sourceTree = "<group>"; };
 		00C779A52440CE2D00C64055 /* RainForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainForecast.swift; sourceTree = "<group>"; };
 		00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ArzhigParentsConfig.xcconfig; sourceTree = "<group>"; };
+		00C779B12440D0CD00C64055 /* ArzhigParentsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArzhigParentsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C779B32440D0CD00C64055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00C779B52440D0CD00C64055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00C779B72440D0D100C64055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00C779BA2440D0D100C64055 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00C779BD2440D0D100C64055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00C779BF2440D0D100C64055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C779C02440D0D100C64055 /* ArzhigParentsMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArzhigParentsMac.entitlements; sourceTree = "<group>"; };
+		00C779C52440D0D100C64055 /* ArzhigParentsMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArzhigParentsMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C779C92440D0D100C64055 /* ArzhigParentsMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArzhigParentsMacTests.swift; sourceTree = "<group>"; };
+		00C779CB2440D0D100C64055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C779D02440D0D100C64055 /* ArzhigParentsMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArzhigParentsMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C779D42440D0D100C64055 /* ArzhigParentsMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArzhigParentsMacUITests.swift; sourceTree = "<group>"; };
+		00C779D62440D0D100C64055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +195,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		005DE31A23C8A66D001D9ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779AE2440D0CD00C64055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779C22440D0D100C64055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779CD2440D0D100C64055 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +289,9 @@
 				0034F8AA243F5D130096F60F /* arzhig-parents-ios */,
 				0034F8C1243F5D160096F60F /* arzhig-parents-iosTests */,
 				0034F8CC243F5D160096F60F /* arzhig-parents-iosUITests */,
+				00C779B22440D0CD00C64055 /* ArzhigParentsMac */,
+				00C779C82440D0D100C64055 /* ArzhigParentsMacTests */,
+				00C779D32440D0D100C64055 /* ArzhigParentsMacUITests */,
 				005DE2FB23C8A66B001D9ED8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,6 +305,9 @@
 				0034F8A9243F5D130096F60F /* arzhig-parents-ios.app */,
 				0034F8BE243F5D160096F60F /* arzhig-parents-iosTests.xctest */,
 				0034F8C9243F5D160096F60F /* arzhig-parents-iosUITests.xctest */,
+				00C779B12440D0CD00C64055 /* ArzhigParentsMac.app */,
+				00C779C52440D0D100C64055 /* ArzhigParentsMacTests.xctest */,
+				00C779D02440D0D100C64055 /* ArzhigParentsMacUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,6 +385,46 @@
 				00C779A52440CE2D00C64055 /* RainForecast.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		00C779B22440D0CD00C64055 /* ArzhigParentsMac */ = {
+			isa = PBXGroup;
+			children = (
+				00C779B32440D0CD00C64055 /* AppDelegate.swift */,
+				00C779B52440D0CD00C64055 /* ContentView.swift */,
+				00C779B72440D0D100C64055 /* Assets.xcassets */,
+				00C779BC2440D0D100C64055 /* Main.storyboard */,
+				00C779BF2440D0D100C64055 /* Info.plist */,
+				00C779C02440D0D100C64055 /* ArzhigParentsMac.entitlements */,
+				00C779B92440D0D100C64055 /* Preview Content */,
+			);
+			path = ArzhigParentsMac;
+			sourceTree = "<group>";
+		};
+		00C779B92440D0D100C64055 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00C779BA2440D0D100C64055 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00C779C82440D0D100C64055 /* ArzhigParentsMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				00C779C92440D0D100C64055 /* ArzhigParentsMacTests.swift */,
+				00C779CB2440D0D100C64055 /* Info.plist */,
+			);
+			path = ArzhigParentsMacTests;
+			sourceTree = "<group>";
+		};
+		00C779D32440D0D100C64055 /* ArzhigParentsMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00C779D42440D0D100C64055 /* ArzhigParentsMacUITests.swift */,
+				00C779D62440D0D100C64055 /* Info.plist */,
+			);
+			path = ArzhigParentsMacUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +536,59 @@
 			productReference = 005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		00C779B02440D0CD00C64055 /* ArzhigParentsMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C779D72440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMac" */;
+			buildPhases = (
+				00C779AD2440D0CD00C64055 /* Sources */,
+				00C779AE2440D0CD00C64055 /* Frameworks */,
+				00C779AF2440D0CD00C64055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArzhigParentsMac;
+			productName = ArzhigParentsMac;
+			productReference = 00C779B12440D0CD00C64055 /* ArzhigParentsMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00C779C42440D0D100C64055 /* ArzhigParentsMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C779DA2440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMacTests" */;
+			buildPhases = (
+				00C779C12440D0D100C64055 /* Sources */,
+				00C779C22440D0D100C64055 /* Frameworks */,
+				00C779C32440D0D100C64055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C779C72440D0D100C64055 /* PBXTargetDependency */,
+			);
+			name = ArzhigParentsMacTests;
+			productName = ArzhigParentsMacTests;
+			productReference = 00C779C52440D0D100C64055 /* ArzhigParentsMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00C779CF2440D0D100C64055 /* ArzhigParentsMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C779DD2440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMacUITests" */;
+			buildPhases = (
+				00C779CC2440D0D100C64055 /* Sources */,
+				00C779CD2440D0D100C64055 /* Frameworks */,
+				00C779CE2440D0D100C64055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C779D22440D0D100C64055 /* PBXTargetDependency */,
+			);
+			name = ArzhigParentsMacUITests;
+			productName = ArzhigParentsMacUITests;
+			productReference = 00C779D02440D0D100C64055 /* ArzhigParentsMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -466,6 +621,17 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 005DE2F923C8A66B001D9ED8;
 					};
+					00C779B02440D0CD00C64055 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					00C779C42440D0D100C64055 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 00C779B02440D0CD00C64055;
+					};
+					00C779CF2440D0D100C64055 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 00C779B02440D0CD00C64055;
+					};
 				};
 			};
 			buildConfigurationList = 005DE2F523C8A66A001D9ED8 /* Build configuration list for PBXProject "arzhig-ios" */;
@@ -487,6 +653,9 @@
 				0034F8A8243F5D130096F60F /* arzhig-parents-ios */,
 				0034F8BD243F5D160096F60F /* arzhig-parents-iosTests */,
 				0034F8C8243F5D160096F60F /* arzhig-parents-iosUITests */,
+				00C779B02440D0CD00C64055 /* ArzhigParentsMac */,
+				00C779C42440D0D100C64055 /* ArzhigParentsMacTests */,
+				00C779CF2440D0D100C64055 /* ArzhigParentsMacUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -536,6 +705,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		005DE31B23C8A66D001D9ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779AF2440D0CD00C64055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C779BE2440D0D100C64055 /* Main.storyboard in Resources */,
+				00C779BB2440D0D100C64055 /* Preview Assets.xcassets in Resources */,
+				00C779B82440D0D100C64055 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779C32440D0D100C64055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779CE2440D0D100C64055 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,6 +806,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00C779AD2440D0CD00C64055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C779B62440D0CD00C64055 /* ContentView.swift in Sources */,
+				00C779B42440D0CD00C64055 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779C12440D0D100C64055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C779CA2440D0D100C64055 /* ArzhigParentsMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C779CC2440D0D100C64055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C779D52440D0D100C64055 /* ArzhigParentsMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -636,6 +854,16 @@
 			target = 005DE2F923C8A66B001D9ED8 /* arzhig-ios */;
 			targetProxy = 005DE31E23C8A66D001D9ED8 /* PBXContainerItemProxy */;
 		};
+		00C779C72440D0D100C64055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C779B02440D0CD00C64055 /* ArzhigParentsMac */;
+			targetProxy = 00C779C62440D0D100C64055 /* PBXContainerItemProxy */;
+		};
+		00C779D22440D0D100C64055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C779B02440D0CD00C64055 /* ArzhigParentsMac */;
+			targetProxy = 00C779D12440D0D100C64055 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -653,6 +881,14 @@
 				005DE30B23C8A66D001D9ED8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		00C779BC2440D0D100C64055 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C779BD2440D0D100C64055 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1020,6 +1256,144 @@
 			};
 			name = Release;
 		};
+		00C779D82440D0D100C64055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArzhigParentsMac/ArzhigParentsMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ArzhigParentsMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArzhigParentsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00C779D92440D0D100C64055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArzhigParentsMac/ArzhigParentsMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ArzhigParentsMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ArzhigParentsMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00C779DB2440D0D100C64055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = ArzhigParentsMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArzhigParentsMac.app/Contents/MacOS/ArzhigParentsMac";
+			};
+			name = Debug;
+		};
+		00C779DC2440D0D100C64055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = ArzhigParentsMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArzhigParentsMac.app/Contents/MacOS/ArzhigParentsMac";
+			};
+			name = Release;
+		};
+		00C779DE2440D0D100C64055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = ArzhigParentsMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ArzhigParentsMac;
+			};
+			name = Debug;
+		};
+		00C779DF2440D0D100C64055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9L264PA4TX;
+				INFOPLIST_FILE = ArzhigParentsMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ArzhigParentsMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ArzhigParentsMac;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1082,6 +1456,33 @@
 			buildConfigurations = (
 				005DE32D23C8A66D001D9ED8 /* Debug */,
 				005DE32E23C8A66D001D9ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C779D72440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C779D82440D0D100C64055 /* Debug */,
+				00C779D92440D0D100C64055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C779DA2440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C779DB2440D0D100C64055 /* Debug */,
+				00C779DC2440D0D100C64055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C779DD2440D0D100C64055 /* Build configuration list for PBXNativeTarget "ArzhigParentsMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C779DE2440D0D100C64055 /* Debug */,
+				00C779DF2440D0D100C64055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
