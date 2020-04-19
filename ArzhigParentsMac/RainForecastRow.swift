@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RainForecastMacRow: View {
+struct RainForecastRow: View {
     var rainForecast: RainForecast
 
     var body: some View {
@@ -30,8 +30,8 @@ struct RainForecastMacRow: View {
     }
 }
 
-struct RainForecastMacRow_Previews: PreviewProvider {
+struct RainForecastRow_Previews: PreviewProvider {
     static var previews: some View {
-        RainForecastMacRow(rainForecast: RainForecast.sampleData[0])
+        RainForecastRow(rainForecast: RainForecast.sampleData[0])
     }
 }
