@@ -1,4 +1,8 @@
+#if os(iOS)
 @testable import ArzhigParents
+#elseif os(macOS)
+@testable import ArzhigParentsMac
+#endif
 import XCTest
 
 class WeatherServiceTests: XCTestCase {

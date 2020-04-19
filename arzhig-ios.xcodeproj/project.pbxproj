@@ -30,6 +30,11 @@
 		005DE30923C8A66D001D9ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30823C8A66D001D9ED8 /* Assets.xcassets */; };
 		005DE30C23C8A66D001D9ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DE30A23C8A66D001D9ED8 /* LaunchScreen.storyboard */; };
 		005DE32223C8A66D001D9ED8 /* arzhig_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */; };
+		007CE8E1244C52080076EC98 /* RainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A52440CE2D00C64055 /* RainForecast.swift */; };
+		007CE8E2244C52140076EC98 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A02440CE2D00C64055 /* WeatherService.swift */; };
+		007CE8E3244C52180076EC98 /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A32440CE2D00C64055 /* TinyNetworking.swift */; };
+		007CE8E4244C52280076EC98 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */; };
+		007CE8E6244C529E0076EC98 /* RainForecastMacRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CE8E5244C529E0076EC98 /* RainForecastMacRow.swift */; };
 		009510E023CDF2FC00B59EEA /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */; };
 		009D814023D4881B00CAAB08 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D813F23D4881B00CAAB08 /* Video.swift */; };
 		009D814223D48BB200CAAB08 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D814123D48BB200CAAB08 /* VideoCell.swift */; };
@@ -131,6 +136,7 @@
 		005DE31D23C8A66D001D9ED8 /* arzhig-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arzhig-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005DE32123C8A66D001D9ED8 /* arzhig_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arzhig_iosUITests.swift; sourceTree = "<group>"; };
 		005DE32323C8A66D001D9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007CE8E5244C529E0076EC98 /* RainForecastMacRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainForecastMacRow.swift; sourceTree = "<group>"; };
 		009510DF23CDF2FC00B59EEA /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
 		009D813F23D4881B00CAAB08 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		009D814123D48BB200CAAB08 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
@@ -397,6 +403,7 @@
 				00C779BF2440D0D100C64055 /* Info.plist */,
 				00C779C02440D0D100C64055 /* ArzhigParentsMac.entitlements */,
 				00C779B92440D0D100C64055 /* Preview Content */,
+				007CE8E5244C529E0076EC98 /* RainForecastMacRow.swift */,
 			);
 			path = ArzhigParentsMac;
 			sourceTree = "<group>";
@@ -810,8 +817,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007CE8E2244C52140076EC98 /* WeatherService.swift in Sources */,
+				007CE8E6244C529E0076EC98 /* RainForecastMacRow.swift in Sources */,
 				00C779B62440D0CD00C64055 /* ContentView.swift in Sources */,
+				007CE8E1244C52080076EC98 /* RainForecast.swift in Sources */,
 				00C779B42440D0CD00C64055 /* AppDelegate.swift in Sources */,
+				007CE8E3244C52180076EC98 /* TinyNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007CE8E4244C52280076EC98 /* WeatherServiceTests.swift in Sources */,
 				00C779CA2440D0D100C64055 /* ArzhigParentsMacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
