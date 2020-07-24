@@ -1,0 +1,2 @@
+PRODUCT_MODULE_NAME = ArzhigParents
+RAIN_FORECAST_URL = https://www.meteofrance.com/mf3-rpc-portlet/rest/pluie/751110

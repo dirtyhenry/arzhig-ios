@@ -5,7 +5,7 @@ install:
 	brew bundle
 
 open:
-	open arzhig-ios.xcodeproj
+	open Arzhig.xcodeproj
 
 clean:
 	rm -rf node_modules
