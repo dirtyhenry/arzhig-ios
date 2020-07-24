@@ -50,7 +50,6 @@
 		00C779A82440CE2D00C64055 /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A32440CE2D00C64055 /* TinyNetworking.swift */; };
 		00C779A92440CE2D00C64055 /* RainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A52440CE2D00C64055 /* RainForecast.swift */; };
 		00C779AA2440CE8A00C64055 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779A12440CE2D00C64055 /* WeatherServiceTests.swift */; };
-		00C779AC2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00C779AB2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig */; };
 		00C779B42440D0CD00C64055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C779B32440D0CD00C64055 /* AppDelegate.swift */; };
 		00C779B82440D0D100C64055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C779B72440D0D100C64055 /* Assets.xcassets */; };
 		00C779BB2440D0D100C64055 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C779BA2440D0D100C64055 /* Preview Assets.xcassets */; };
@@ -615,7 +614,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = mickf.net;
 				TargetAttributes = {
 					0034F8A8243F5D130096F60F = {
@@ -687,7 +686,6 @@
 				0034F8B8243F5D160096F60F /* LaunchScreen.storyboard in Resources */,
 				0034F8B5243F5D160096F60F /* Preview Assets.xcassets in Resources */,
 				0034F8B2243F5D160096F60F /* Assets.xcassets in Resources */,
-				00C779AC2440CFCE00C64055 /* ArzhigParentsConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1287,6 +1285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ArzhigParentsMac/ArzhigParentsMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ArzhigParentsMac/Preview Content\"";
@@ -1311,6 +1310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ArzhigParentsMac/ArzhigParentsMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ArzhigParentsMac/Preview Content\"";
